@@ -4,13 +4,16 @@ def is_even():
    user_data = int(input("Please give me an integer. "))
    out = None
    
-   # TODO: 
+   
    # Create a conditional that sets out to True if the user enters
    # an even integer and False if the user enters an odd integer.
-    if user_data % 2 == 0:
-       out = True
-       else:
-          out = False
+   if user_data % 2 == 0:
+      print("Don't be such a zero!")
+   return None
+
+      out = True
+   else:
+      out = False
 
    # This is for the test.
    return out 
@@ -41,7 +44,7 @@ def multi_condition():
 
 
 def is_underage():
-   #TODO:
+
    # Prompt the user for their age and store it to a variable. Don't
    # forget to convert the input to an integer.
   user_data = int(input("How old are you? "))
@@ -64,10 +67,11 @@ def is_underage():
    return None
 
 def countdown():
-   #TODO:
+  
    # Use a loop to print a countdown from 10 to zero with
    # one number on each new line. If you do not use a loop
    # you will not get points for this problem.
+
    for i in range(10,-1,-1):
       print(i)
 
@@ -103,16 +107,16 @@ def guessing_game(num):
          #somehow break the while
          end_game = True 
          print("Goodbye, quitter!")
-         elif user_input == num:
-            end_game= True
-            print("You win!")
-            elif user_input < num:
-         print("Too Low!")
       else:
-         user_input - int(user_input)
-         print("Too High!")
-         counter += 1
-
+         x = int(user_input)
+         if x == num:
+            end_game= True
+               print("You win!")
+            elif x < num:
+               print("Too Low!")
+            else:
+               print("Too High!")
+               counter += 1
 
    # So the tests fail and they don't throw errors
    return None
